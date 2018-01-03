@@ -77,6 +77,30 @@ body {
   flex-flow: column;
   justify-content: center;
   align-items: center;
+}
+
+select {
+  width: 70%;
+  height: 50%;
+  background-color: black;
+  border: none;
+  color: white;
+  font-size: 3.7rem;
+  font-family: $em-font;
+  text-align: center;
+}
+
+select:focus {
+  outline: none;
+}
+
+
+.artist{
+  width: 33%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
 
   h1 {
     color: white;
@@ -85,6 +109,19 @@ body {
   }
 }
 
+.educator{
+  width: 33%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    color: white;
+    font-size: 4rem;
+    font-family: $em-font;
+  }
+}
 
 .fadeIn {
   animation-duration: 2s;
@@ -146,33 +183,7 @@ body {
   }
 }
 
-.artist{
-  width: 33%;
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
-  align-items: center;
 
-  h1 {
-    color: white;
-    font-size: 4rem;
-    font-family: $em-font;
-  }
-}
-
-.educator{
-  width: 33%;
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
-  align-items: center;
-
-  h1 {
-    color: white;
-    font-size: 4rem;
-    font-family: $em-font;
-  }
-}
 
 .footer {
   position: relative;

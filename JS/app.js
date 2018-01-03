@@ -5,6 +5,7 @@ const nav = document.querySelector('nav');
 const logo = document.getElementById('logo');
 const name= document.getElementById('name');
 const banner= document.getElementsByClassName('banner')[0];
+const select= document.querySelectorAll('select');
 
 let scrollHeight = document.body.scrollHeight;
 let windowHeight = window.innerHeight;
@@ -69,7 +70,6 @@ function moveBanner() {
     logo.style.marginTop= (scrollTop * .002)+ 'rem';
     name.style.top= -(scrollTop * .17)+ "px";
     name.style.right= namePosition.left-(scrollTop * .09)+ "px";
-    console.log(left);
   } else if (scrollTop === 0) {
     banner.classList.remove('banner');
     banner.classList.add('banner-final');
@@ -77,5 +77,37 @@ function moveBanner() {
     logo.style.left= "106.86000000000001px"
     name.style.top= "-258.06px";
     name.style.rigth= "80.825625px";
+  }
+}
+
+for (var i = 0; i < select.length; i++) {
+  select[i].addEventListener('change', pageRedirect);
+};
+
+function pageRedirect(event) {
+  let target= event.target.value;
+  switch (target) {
+    case "projects":
+      window.location.href = 'projects.html';
+      break;
+
+    case "education":
+      window.location.href = 'education.html';
+      break;
+
+    case "website":
+      window.open("https://kingdonarts.com");
+      break;
+
+    case "experience":
+      window.location.href = 'experience.html';
+      break;
+
+    case "curriculum":
+      window.open("https://www.teacherspayteachers.com/Store/Middle-School-Science-Through-Inquiry");
+      break;
+
+    default:
+      break;
   }
 }
