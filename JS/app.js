@@ -64,15 +64,17 @@ function moveBanner() {
   let scrollTop = window.pageYOffset;
 
   if (scrollTop != 0) {
-    logo.style.left =logoPosition.left - (scrollTop * .24)+ 'px';
+    let left= logo.style.left =logoPosition.left - (scrollTop * .24)+ 'px';
     logo.style.width= 25 - (scrollTop * .004)+ 'rem';
     logo.style.marginTop= (scrollTop * .002)+ 'rem';
     name.style.top= -(scrollTop * .17)+ "px";
-    let right= name.style.right= namePosition.left-(scrollTop * .09)+ "px";
-    console.log(right);
+    name.style.right= namePosition.left-(scrollTop * .09)+ "px";
+    console.log(left);
   } else if (scrollTop === 0) {
     banner.classList.remove('banner');
     banner.classList.add('banner-final');
+    banner.classList.add('flipInX')
+    logo.style.left= "106.86000000000001px"
     name.style.top= "-258.06px";
     name.style.rigth= "80.825625px";
   }
