@@ -29,6 +29,13 @@ body {
   flex-flow: row;
   justify-content: center; }
 
+.banner-final {
+  grid-row: 1/2;
+  grid-column: 1/end;
+  display: flex;
+  flex-flow: row;
+  justify-content: center; }
+
 #logo {
   width: 25rem;
   position: fixed; }
