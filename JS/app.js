@@ -110,4 +110,7 @@ function pageRedirect(event) {
     default:
       break;
   }
+  for (var i = 0; i < select.length; i++) {
+    select[i].selectedIndex= 0;
+  }
 }

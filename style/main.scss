@@ -71,7 +71,7 @@ body {
 }
 
 
-.developer{
+.developer, .artist, .educator{
   width: 33%;
   display: flex;
   flex-flow: column;
@@ -94,37 +94,27 @@ select:focus {
   outline: none;
 }
 
-
-.artist{
-  width: 33%;
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
-  align-items: center;
-
-  h1 {
-    color: white;
-    font-size: 4rem;
-    font-family: $em-font;
-  }
-}
-
-.educator{
-  width: 33%;
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
-  align-items: center;
-
-  h1 {
-    color: white;
-    font-size: 4rem;
-    font-family: $em-font;
-  }
-}
-
 .fadeIn {
   animation-duration: 2s;
+  animation-name: fadeIn;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeOut {
+  animation-duration: 2s;
+  animation-name: fadeOut;
+}
+
+.fadeInSlow {
+  animation-duration: 6s;
   animation-name: fadeIn;
 }
 

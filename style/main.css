@@ -109,6 +109,19 @@ select:focus {
   animation-duration: 2s;
   animation-name: fadeOut; }
 
+.fadeInSlow {
+  animation-duration: 6s;
+  animation-name: fadeIn; }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+.fadeOut {
+  animation-duration: 2s;
+  animation-name: fadeOut; }
+
 @keyframes fadeOut {
   from {
     opacity: 1; }

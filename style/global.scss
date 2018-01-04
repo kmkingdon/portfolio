@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css?family=IM+Fell+English+SC|PT+Serif');
+$main-font: "PT Serif", serif;
+$em-font: 'IM Fell English SC', serif;
+
+body{
+  overflow-x: hidden;
+  height: 100vh;
+  margin: 0;
+  background-color: black;
+  display: grid;
+  grid-template-rows: 25vh 75vh;
+  grid-template-columns: 20vw 60vw 20vw;
+
+  header {
+    grid-row: 1/2;
+    grid-column: 1/end;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+
+    a {
+      width: 18%;
+      height: 90%;
+      margin-left: 4rem;
+      img {
+        height: 100%;
+      }
+    }
+
+    nav {
+      width: 75%;
+      height: 90%;
+      margin-right: 4rem;
+      display: flex;
+      flex-flow: row;
+      justify-content: space-around;
+      align-items: center;
+
+      div {
+        width: 33%;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+
+        select {
+          width: 80%;
+          height: 70%;
+          background-color: black;
+          border: none;
+          color: white;
+          font-size: 2.5rem;
+          font-family: $em-font;
+          text-align: center;
+        }
+
+        select:focus {
+          outline: none;
+        }
+      }
+    }
+  }
+}
+
+main {
+  grid-row: 2/end;
+  grid-column: 1/end;
+  background-color: teal;
+}
+
+#project-container {
+  overflow-y: scroll;
+  margin-left: 4rem;
+  margin-right: 4rem;
+  width: 90%;
+  height: 95%;
+  display: flex;
+  flex-flow: row-reverse wrap-reverse;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.box {
+  border: black solid 5px;
+  background-color: white;
+  width: 45%;
+  margin: 1rem;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: space-around;
+
+  h1 {
+    margin-top: .5rem;
+    color: teal;
+    font-size: 2rem;
+    font-family: $em-font;
+    text-align: center;
+  }
+}
+
+.info {
+  width: 100%;
+  display: grid;
+  grid-template-rows: 50% 25% 25%;
+  grid-template-columns: 30% 70%;
+}
+
+#logo {
+  grid-row: 1/3;
+  grid-column: 1/2;
+  width: 6rem;
+  align-self: center;
+  justify-self: center;
+}
+
+#describe {
+  grid-row: 1/2;
+  grid-column: 2/end;
+  font-size: 1rem;
+  font-family: $main-font;
+  text-align: center;
+  align-self: center;
+  justify-self: center;
+}
+
+#tech {
+  grid-row: 2/3;
+  grid-column: 2/end;
+  font-size: 1rem;
+  margin-top: 1rem;
+  font-weight: bolder;
+  font-family: $main-font;
+  align-self: center;
+  justify-self: center;
+}
+
+#link {
+  grid-row: 3/end;
+  grid-column: 1/end;
+  font-size: 1rem;
+  margin-top: 1rem;
+  color: teal;
+  text-decoration: none;
+  align-self: center;
+  justify-self: start;
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+
+  :visited {
+    color: black;
+  }
+}
+
+#git {
+  grid-row: 3/end;
+  grid-column: 1/end;
+  font-size: 1rem;
+  margin-top: 1rem;
+  color: teal;
+  text-decoration: none;
+  align-self: center;
+  justify-self: end;
+  margin-right: 2rem;
+  margin-bottom: 1rem;
+
+  :visited {
+    color: black;
+  }
+}
