@@ -43,7 +43,25 @@ const projects = [
     "tech": "Express, Node.js, JavaScript, HTML, CSS",
     "website": "https://convo-pro.firebaseapp.com",
     "git": "https://github.com/kmkingdon/convo-pro-front"
-  },
+  }, { "name": "ConvoPro",
+    "image": "assets/convopro-logo.png",
+    "description":"Random question generator that enhances conversations with abilities to toggle question intimacy level and nsfw version.",
+    "tech": "Express, Node.js, JavaScript, HTML, CSS",
+    "website": "https://convo-pro.firebaseapp.com",
+    "git": "https://github.com/kmkingdon/convo-pro-front"
+  }, { "name": "ConvoPro",
+    "image": "assets/convopro-logo.png",
+    "description":"Random question generator that enhances conversations with abilities to toggle question intimacy level and nsfw version.",
+    "tech": "Express, Node.js, JavaScript, HTML, CSS",
+    "website": "https://convo-pro.firebaseapp.com",
+    "git": "https://github.com/kmkingdon/convo-pro-front"
+  }, { "name": "ConvoPro",
+    "image": "assets/convopro-logo.png",
+    "description":"Random question generator that enhances conversations with abilities to toggle question intimacy level and nsfw version.",
+    "tech": "Express, Node.js, JavaScript, HTML, CSS",
+    "website": "https://convo-pro.firebaseapp.com",
+    "git": "https://github.com/kmkingdon/convo-pro-front"
+  }
 ];
 
 function populateProjects(array) {
