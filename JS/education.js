@@ -1,4 +1,3 @@
-const select = document.querySelectorAll('select');
 const galvanizeButton= document.getElementById('galvanize');
 const galvanizeInfo= document.getElementById('galvanize-info');
 const centenaryButton= document.getElementById('centenary');
@@ -10,37 +9,6 @@ const close= document.getElementsByClassName('close');
 for (var i = 0; i < select.length; i++) {
   select[i].addEventListener('change', pageRedirect)
 };
-
-function pageRedirect (event) {
-  let target = event.target.value
-  switch (target) {
-    case 'projects':
-      window.location.href = 'projects.html';
-      break;
-
-    case 'education':
-      window.location.href = 'education.html';
-      break;
-
-    case 'website':
-      window.open('https://kingdonarts.com');
-      break;
-
-    case 'experience':
-      window.location.href = 'experience.html';
-      break;
-
-    case 'curriculum':
-      window.open('https://www.teacherspayteachers.com/Store/Middle-School-Science-Through-Inquiry');
-      break;
-
-    default:
-      break;
-  }
-  for (var i = 0; i < select.length; i++) {
-    select[i].selectedIndex = 0;
-  }
-}
 
 galvanize.addEventListener('click', displayGalvanize);
 

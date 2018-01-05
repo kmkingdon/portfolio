@@ -5,7 +5,6 @@ const nav = document.querySelector('nav');
 const logo = document.getElementById('logo');
 const name= document.getElementById('name');
 const banner= document.getElementsByClassName('banner')[0];
-const select= document.querySelectorAll('select');
 
 let scrollHeight = document.body.scrollHeight;
 let windowHeight = window.innerHeight;
@@ -42,18 +41,13 @@ function moveFooter() {
     arrow.classList.add('fadeOut')
     arrow.classList.add('hidden');
 
-
     let contacts = footer.childNodes;
     for (var i = 1; i < contacts.length; i += 2) {
       contacts[i].classList.remove('hidden');
       contacts[i].classList.add('fadeIn');
     }
 
-    let navLinks = nav.childNodes;
-    for (var i = 1; i < navLinks.length; i += 2) {
-      navLinks[i].classList.remove('hidden');
-      navLinks[i].classList.add('fadeIn');
-    }
+    nav.style.display= "flex";
   }
 }
 
@@ -77,40 +71,5 @@ function moveBanner() {
     logo.style.left= "110px";
     name.style.top= "-260px";
     name.style.rigth= "80px";
-  }
-}
-
-for (var i = 0; i < select.length; i++) {
-  select[i].addEventListener('change', pageRedirect);
-};
-
-function pageRedirect(event) {
-  let target= event.target.value;
-  switch (target) {
-    case "projects":
-      window.location.href = 'projects.html';
-      break;
-
-    case "education":
-      window.location.href = 'education.html';
-      break;
-
-    case "website":
-      window.open("https://kingdonarts.com");
-      break;
-
-    case "experience":
-      window.location.href = 'experience.html';
-      break;
-
-    case "curriculum":
-      window.open("https://www.teacherspayteachers.com/Store/Middle-School-Science-Through-Inquiry");
-      break;
-
-    default:
-      break;
-  }
-  for (var i = 0; i < select.length; i++) {
-    select[i].selectedIndex= 0;
   }
 }
