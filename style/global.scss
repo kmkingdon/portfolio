@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=IM+Fell+English+SC|PT+Serif');
+@import url("https://fonts.googleapis.com/css?family=IM+Fell+English+SC|PT+Serif");
 $main-font: "PT Serif", serif;
-$em-font: 'IM Fell English SC', serif;
+$em-font: "IM Fell English SC", serif;
 
-body{
+body {
   overflow-x: hidden;
   height: 100vh;
   margin: 0;
@@ -39,42 +39,42 @@ body{
       align-items: center;
 
       .dropdown {
-          position: relative;
-          width: 33%;
-          display: inline-block;
+        position: relative;
+        width: 33%;
+        display: inline-block;
+        text-align: center;
+        span {
+          color: white;
+          font-size: 2.5rem;
+          font-family: $em-font;
           text-align: center;
-          span {
-            color: white;
-            font-size: 2.5rem;
-            font-family: $em-font;
-            text-align: center;
-            cursor: pointer;
-          }
-          img {
-            margin-left: .5rem;
-            width: 1.5rem;
-          }
+          cursor: pointer;
         }
+        img {
+          margin-left: 0.5rem;
+          width: 1.5rem;
+        }
+      }
       .dropdown-content {
-          display: none;
-          position: absolute;
-          background-color: #f9f9f9;
-          min-width: 160px;
-          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-          z-index: 1;
-          padding: 12px 16px;
-          margin-left: 4rem;
-          a {
-            width: 100%;
-            color: black;
-            font-size: 2rem;
-            text-decoration: none;
-            font-family: $main-font;
-          }
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        padding: 12px 16px;
+        margin-left: 4rem;
+        a {
+          width: 100%;
+          color: black;
+          font-size: 2rem;
+          text-decoration: none;
+          font-family: $main-font;
+        }
       }
 
       .dropdown:hover .dropdown-content {
-          display: block;
+        display: block;
       }
     }
   }
@@ -122,7 +122,7 @@ main {
   align-items: space-around;
 
   h1 {
-    margin-top: .5rem;
+    margin-top: 0.5rem;
     margin-bottom: 1rem;
     color: teal;
     font-size: 2rem;
@@ -211,7 +211,7 @@ main {
 }
 
 .education-container {
-  margin-top: .5rem;
+  margin-top: 0.5rem;
   grid-row: 1/end;
   grid-column: 2/end;
   margin-left: 2rem;
@@ -245,7 +245,6 @@ main {
   cursor: pointer;
 }
 
-
 #galvanize-info {
   grid-row: 2/10;
   grid-column: 5/10;
@@ -273,20 +272,22 @@ main {
   }
 }
 
-#galvanize-info, #centenary-info, #sju-info {
+#galvanize-info,
+#centenary-info,
+#sju-info {
   border: solid black 5px;
   background-color: white;
   grid-template-rows: 10% 30% 10% 10% 40%;
   grid-template-columns: 50% 50%;
 
-  .close{
+  .close {
     grid-row: 1/2;
     grid-column: 1/3;
     justify-self: end;
     align-self: start;
     width: 1.5rem;
-    margin-top: .5rem;
-    margin-right: .5rem;
+    margin-top: 0.5rem;
+    margin-right: 0.5rem;
     cursor: pointer;
   }
   img {
@@ -331,15 +332,18 @@ main {
   }
 }
 
-
 .bounceInRight {
   animation-name: bounceInRight;
   animation-duration: 2s;
 }
 
 @keyframes bounceInRight {
-  from, 60%, 75%, 90%, to {
-    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  from,
+  60%,
+  75%,
+  90%,
+  to {
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
   }
 
   from {
@@ -362,5 +366,186 @@ main {
 
   to {
     transform: none;
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  body {
+    height: 135vh;
+    width: 100vw;
+    grid-template-rows: 55vh 80vh;
+    grid-template-columns: 100vw;
+
+    header {
+      grid-row: 1/2;
+      grid-column: 1/end;
+      flex-flow: column;
+      justify-content: center;
+
+      .home {
+        height: 20%;
+        margin-left: 0rem;
+        margin-top: 0.5rem;
+      }
+
+      nav {
+        width: 100%;
+        height: 80%;
+        margin-top: 1rem;
+        margin-right: 0rem;
+        flex-flow: column;
+        justify-content: center;
+
+        .dropdown {
+          width: 100%;
+          height: 33%;
+          span {
+            font-size: 2rem;
+          }
+        }
+        .dropdown-content {
+          margin-left: 8rem;
+          a {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
+
+  main {
+    height: 80vh;
+    grid-row: 2/3;
+    grid-column: 1/end;
+    grid-template-rows: 100%;
+    grid-template-columns: 100vw;
+
+    .title {
+      grid-row: 1/end;
+      grid-column: 1/2;
+      width: 20%;
+      align-self: start;
+      justify-self: start;
+      float: left;
+    }
+  }
+
+  #project-container {
+    grid-column: 1/2;
+    margin: 1rem 0rem 0rem 2rem;
+    width: 100%;
+  }
+
+  .box {
+    width: 70%;
+    margin: 3rem 0rem 0rem 0rem;
+    h1 {
+      font-size: 1.5rem;
+    }
+  }
+
+  #logo {
+    width: 4rem;
+    align-self: start;
+  }
+
+  #describe {
+    font-size: 0.75rem;
+    text-align: left;
+  }
+
+  #tech {
+    font-size: 0.8rem;
+    margin-top: 1rem;
+  }
+
+  #link {
+    font-size: 0.75rem;
+    margin: 1rem 0rem 1rem 1rem;
+  }
+
+  #git {
+    margin: 1rem 1rem 1rem 0rem;
+    font-size: 0.75rem;
+  }
+
+  #mapid {
+    grid-row: 1/end;
+    grid-column: 1/2;
+    margin-left: 3.5rem;
+    width: 75%;
+  }
+
+  .education-container {
+    margin-top: 0rem;
+    margin-left: 4.5rem;
+    margin-right: 0rem;
+    grid-column: 1/2;
+    width: 80%;
+    height: 70%;
+    background-image: url("/assets/educationbanner.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: grid;
+    grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+    grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+  }
+
+  #galvanize {
+    grid-row: 3/6;
+    grid-column: 1/5;
+  }
+
+  #centenary {
+    grid-row: 3/5;
+    grid-column: 7/11;
+  }
+
+  #sju {
+    grid-row: 7/9;
+  }
+
+  #galvanize-info {
+    grid-column: 2/10;
+    img {
+      width: 5rem;
+    }
+  }
+
+  #centenary-info {
+    grid-column: 2/10;
+    img {
+      width: 6rem;
+    }
+  }
+
+  #sju-info {
+    grid-row: 2/10;
+    img {
+      width: 6rem;
+    }
+  }
+
+  #galvanize-info,
+  #centenary-info,
+  #sju-info {
+    .close {
+      width: 1 rem;
+    }
+
+    h1 {
+      font-size: 1.5rem;
+    }
+    h2 {
+      font-size: 1 rem;
+    }
+    h3 {
+      font-size: 0.8rem;
+    }
+    p {
+      font-size: 0.7rem;
+      margin: 0rem 0.5rem;
+    }
   }
 }

@@ -41,7 +41,7 @@ body {
           text-align: center;
           cursor: pointer; }
         body header nav .dropdown img {
-          margin-left: .5rem;
+          margin-left: 0.5rem;
           width: 1.5rem; }
       body header nav .dropdown-content {
         display: none;
@@ -57,8 +57,7 @@ body {
           color: black;
           font-size: 2rem;
           text-decoration: none;
-          font-family: "PT Serif", serif;
-          padding: 20px 0px; }
+          font-family: "PT Serif", serif; }
       body header nav .dropdown:hover .dropdown-content {
         display: block; }
 
@@ -99,7 +98,7 @@ main {
   justify-content: center;
   align-items: space-around; }
   .box h1 {
-    margin-top: .5rem;
+    margin-top: 0.5rem;
     margin-bottom: 1rem;
     color: teal;
     font-size: 2rem;
@@ -175,7 +174,7 @@ main {
   width: 90%; }
 
 .education-container {
-  margin-top: .5rem;
+  margin-top: 0.5rem;
   grid-row: 1/end;
   grid-column: 2/end;
   margin-left: 2rem;
@@ -226,26 +225,34 @@ main {
   #sju-info img {
     width: 13rem; }
 
-#galvanize-info, #centenary-info, #sju-info {
+#galvanize-info,
+#centenary-info,
+#sju-info {
   border: solid black 5px;
   background-color: white;
   grid-template-rows: 10% 30% 10% 10% 40%;
   grid-template-columns: 50% 50%; }
-  #galvanize-info .close, #centenary-info .close, #sju-info .close {
+  #galvanize-info .close,
+  #centenary-info .close,
+  #sju-info .close {
     grid-row: 1/2;
     grid-column: 1/3;
     justify-self: end;
     align-self: start;
     width: 1.5rem;
-    margin-top: .5rem;
-    margin-right: .5rem;
+    margin-top: 0.5rem;
+    margin-right: 0.5rem;
     cursor: pointer; }
-  #galvanize-info img, #centenary-info img, #sju-info img {
+  #galvanize-info img,
+  #centenary-info img,
+  #sju-info img {
     grid-row: 2/3;
     grid-column: 1/2;
     justify-self: center;
     align-self: center; }
-  #galvanize-info h1, #centenary-info h1, #sju-info h1 {
+  #galvanize-info h1,
+  #centenary-info h1,
+  #sju-info h1 {
     grid-row: 2/3;
     grid-column: 2/3;
     font-size: 2.3rem;
@@ -253,21 +260,27 @@ main {
     justify-self: center;
     align-self: center;
     text-align: center; }
-  #galvanize-info h2, #centenary-info h2, #sju-info h2 {
+  #galvanize-info h2,
+  #centenary-info h2,
+  #sju-info h2 {
     grid-row: 3/4;
     grid-column: 1/3;
     font-size: 1.3rem;
     font-family: "PT Serif", serif;
     justify-self: center;
     align-self: center; }
-  #galvanize-info h3, #centenary-info h3, #sju-info h3 {
+  #galvanize-info h3,
+  #centenary-info h3,
+  #sju-info h3 {
     grid-row: 4/5;
     grid-column: 1/3;
     font-size: 1.1rem;
     font-family: "PT Serif", serif;
     justify-self: center;
     align-self: center; }
-  #galvanize-info p, #centenary-info p, #sju-info p {
+  #galvanize-info p,
+  #centenary-info p,
+  #sju-info p {
     grid-row: 5/6;
     grid-column: 1/3;
     font-size: 1rem;
@@ -281,7 +294,11 @@ main {
   animation-duration: 2s; }
 
 @keyframes bounceInRight {
-  from, 60%, 75%, 90%, to {
+  from,
+  60%,
+  75%,
+  90%,
+  to {
     animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }
   from {
     opacity: 0;
@@ -295,5 +312,150 @@ main {
     transform: translate3d(-5px, 0, 0); }
   to {
     transform: none; } }
+@media only screen and (max-width: 780px) {
+  body {
+    height: 135vh;
+    width: 100vw;
+    grid-template-rows: 55vh 80vh;
+    grid-template-columns: 100vw; }
+    body header {
+      grid-row: 1/2;
+      grid-column: 1/end;
+      flex-flow: column;
+      justify-content: center; }
+      body header .home {
+        height: 20%;
+        margin-left: 0rem;
+        margin-top: 0.5rem; }
+      body header nav {
+        width: 100%;
+        height: 80%;
+        margin-top: 1rem;
+        margin-right: 0rem;
+        flex-flow: column;
+        justify-content: center; }
+        body header nav .dropdown {
+          width: 100%;
+          height: 33%; }
+          body header nav .dropdown span {
+            font-size: 2rem; }
+        body header nav .dropdown-content {
+          margin-left: 8rem; }
+          body header nav .dropdown-content a {
+            font-size: 1rem; }
+
+  main {
+    height: 80vh;
+    grid-row: 2/3;
+    grid-column: 1/end;
+    grid-template-rows: 100%;
+    grid-template-columns: 100vw; }
+    main .title {
+      grid-row: 1/end;
+      grid-column: 1/2;
+      width: 20%;
+      align-self: start;
+      justify-self: start;
+      float: left; }
+
+  #project-container {
+    grid-column: 1/2;
+    margin: 1rem 0rem 0rem 2rem;
+    width: 100%; }
+
+  .box {
+    width: 70%;
+    margin: 3rem 0rem 0rem 0rem; }
+    .box h1 {
+      font-size: 1.5rem; }
+
+  #logo {
+    width: 4rem;
+    align-self: start; }
+
+  #describe {
+    font-size: 0.75rem;
+    text-align: left; }
+
+  #tech {
+    font-size: 0.8rem;
+    margin-top: 1rem; }
+
+  #link {
+    font-size: 0.75rem;
+    margin: 1rem 0rem 1rem 1rem; }
+
+  #git {
+    margin: 1rem 1rem 1rem 0rem;
+    font-size: 0.75rem; }
+
+  #mapid {
+    grid-row: 1/end;
+    grid-column: 1/2;
+    margin-left: 3.5rem;
+    width: 75%; }
+
+  .education-container {
+    margin-top: 0rem;
+    margin-left: 4.5rem;
+    margin-right: 0rem;
+    grid-column: 1/2;
+    width: 80%;
+    height: 70%;
+    background-image: url("/assets/educationbanner.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: grid;
+    grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+    grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%; }
+
+  #galvanize {
+    grid-row: 3/6;
+    grid-column: 1/5; }
+
+  #centenary {
+    grid-row: 3/5;
+    grid-column: 7/11; }
+
+  #sju {
+    grid-row: 7/9; }
+
+  #galvanize-info {
+    grid-column: 2/10; }
+    #galvanize-info img {
+      width: 5rem; }
+
+  #centenary-info {
+    grid-column: 2/10; }
+    #centenary-info img {
+      width: 6rem; }
+
+  #sju-info {
+    grid-row: 2/10; }
+    #sju-info img {
+      width: 6rem; }
+
+  #galvanize-info .close,
+  #centenary-info .close,
+  #sju-info .close {
+    width: 1 rem; }
+  #galvanize-info h1,
+  #centenary-info h1,
+  #sju-info h1 {
+    font-size: 1.5rem; }
+  #galvanize-info h2,
+  #centenary-info h2,
+  #sju-info h2 {
+    font-size: 1 rem; }
+  #galvanize-info h3,
+  #centenary-info h3,
+  #sju-info h3 {
+    font-size: 0.8rem; }
+  #galvanize-info p,
+  #centenary-info p,
+  #sju-info p {
+    font-size: 0.7rem;
+    margin: 0rem 0.5rem; } }
 
 /*# sourceMappingURL=global.css.map */

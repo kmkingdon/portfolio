@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=IM+Fell+English+SC|PT+Serif");
 body {
+  overflow: hidden;
   height: 300vh;
   background-color: black;
   overflow: auto;
@@ -27,7 +28,7 @@ body {
         text-align: center;
         cursor: pointer; }
       body nav .dropdown img {
-        margin-left: .5rem;
+        margin-left: 0.5rem;
         width: 1.5rem; }
     body nav .dropdown-content {
       display: none;
@@ -35,7 +36,7 @@ body {
       width: 80%;
       background-color: #f9f9f9;
       min-width: 160px;
-      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
       z-index: 1;
       padding: 12px 16px;
       margin-left: 4rem; }
@@ -45,7 +46,7 @@ body {
         font-size: 2rem;
         text-decoration: none;
         font-family: "PT Serif", serif;
-        padding: 20px 0px; }
+        padding: 20px 0; }
     body nav .dropdown:hover .dropdown-content {
       display: block; }
 
@@ -91,26 +92,6 @@ body {
   margin-top: 75vh;
   z-index: 1; }
 
-.developer, .artist, .educator {
-  width: 33%;
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
-  align-items: center; }
-
-select {
-  width: 70%;
-  height: 50%;
-  background-color: black;
-  border: none;
-  color: white;
-  font-size: 3.7rem;
-  font-family: "IM Fell English SC", serif;
-  text-align: center; }
-
-select:focus {
-  outline: none; }
-
 .fadeIn {
   animation-duration: 2s;
   animation-name: fadeIn; }
@@ -152,14 +133,9 @@ select:focus {
     transform: perspective(400px) rotate3d(1, 0, 0, 30deg);
     animation-timing-function: ease-in;
     opacity: 1; }
-  40% {
-    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
-    animation-timing-function: ease-in; }
-  60% {
-    transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+  50% {
+    transform: perspective(400px) rotate3d(1, 0, 0, -30deg);
     opacity: 1; }
-  80% {
-    transform: perspective(400px) rotate3d(1, 0, 0, -5deg); }
   to {
     transform: perspective(400px); } }
 .footer {
@@ -284,5 +260,107 @@ select:focus {
 
 .hidden {
   display: none; }
+
+@media only screen and (max-width: 780px) {
+  body {
+    height: 150vh;
+    grid-template-rows: 22vh 60vh 68vh;
+    grid-template-columns: 100%;
+    background-image: url("../assets/background.jpg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain; }
+    body .banner {
+      grid-row: 1/2;
+      grid-column: 1/2;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: center;
+      align-items: center; }
+    body nav {
+      display: grid;
+      grid-row: 2/3;
+      grid-column: 1/2;
+      flex-flow: column nowrap;
+      justify-content: space-around;
+      height: 100%; }
+      body nav .dropdown {
+        width: 100%; }
+        body nav .dropdown span {
+          font-size: 2rem; }
+        body nav .dropdown img {
+          width: 0.5rem; }
+      body nav .dropdown-content {
+        margin-left: 0rem; }
+        body nav .dropdown-content a {
+          font-size: 1rem; }
+
+  .parallax {
+    display: none; }
+
+  #logo {
+    position: relative;
+    width: 10rem;
+    z-index: -1;
+    margin-left: 1rem; }
+
+  #name {
+    position: relative;
+    font-size: 2.5rem;
+    margin-top: 0;
+    z-index: 1;
+    margin-right: 1rem;
+    text-align: right; }
+
+  #arrow {
+    display: none; }
+
+  .hidden {
+    display: grid; }
+
+  #footer {
+    grid-row: 3/4;
+    grid-column: 1/2;
+    height: 100%;
+    width: 100%;
+    background-color: teal;
+    grid-template-rows: 15% 15% 15% 15% 15% 15%;
+    grid-template-columns: 100%; }
+
+  .location {
+    grid-row: 1/2;
+    grid-column: 1/2; }
+    .location p {
+      font-size: 1.3rem; }
+
+  .phone {
+    grid-row: 2/3;
+    grid-column: 1/2; }
+    .phone a {
+      font-size: 1.3rem; }
+
+  .email {
+    grid-row: 3/4;
+    grid-column: 1/2; }
+    .email a {
+      font-size: 1.3rem; }
+
+  .linkin {
+    grid-row: 4/5;
+    grid-column: 1/2; }
+    .linkin a {
+      font-size: 1.3rem; }
+
+  .github {
+    grid-row: 5/6;
+    grid-column: 1/2; }
+    .github a {
+      font-size: 1.3rem; }
+
+  .resume {
+    grid-row: 6/7;
+    grid-column: 1/2; }
+    .resume a {
+      font-size: 1.3rem; } }
 
 /*# sourceMappingURL=main.css.map */
