@@ -261,7 +261,7 @@ body {
 .hidden {
   display: none; }
 
-@media only screen and (max-width: 780px) {
+@media only screen and (max-width: 767px) {
   body {
     height: 150vh;
     grid-template-rows: 22vh 60vh 68vh;
@@ -291,7 +291,7 @@ body {
         body nav .dropdown img {
           width: 0.5rem; }
       body nav .dropdown-content {
-        margin-left: 0rem; }
+        margin-left: 0; }
         body nav .dropdown-content a {
           font-size: 1rem; }
 
@@ -329,37 +329,216 @@ body {
 
   .location {
     grid-row: 1/2;
-    grid-column: 1/2; }
+    grid-column: 1/2;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center; }
+    .location img {
+      margin-left: 0rem; }
     .location p {
       font-size: 1.3rem; }
 
   .phone {
     grid-row: 2/3;
-    grid-column: 1/2; }
+    grid-column: 1/2;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center; }
+    .phone img {
+      margin-left: 0rem; }
     .phone a {
       font-size: 1.3rem; }
 
   .email {
     grid-row: 3/4;
-    grid-column: 1/2; }
+    grid-column: 1/2;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center; }
+    .email img {
+      margin-left: 0rem; }
     .email a {
       font-size: 1.3rem; }
 
   .linkin {
     grid-row: 4/5;
-    grid-column: 1/2; }
+    grid-column: 1/2;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center; }
+    .linkin img {
+      margin-left: 0rem; }
     .linkin a {
       font-size: 1.3rem; }
 
   .github {
     grid-row: 5/6;
-    grid-column: 1/2; }
+    grid-column: 1/2;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center; }
+    .github img {
+      margin-left: 0rem; }
     .github a {
       font-size: 1.3rem; }
 
   .resume {
     grid-row: 6/7;
-    grid-column: 1/2; }
+    grid-column: 1/2;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center; }
+    .resume img {
+      margin-left: 0rem; }
+    .resume a {
+      font-size: 1.3rem; } }
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  body {
+    height: 100vh;
+    grid-template-rows: 30vh 35vh 35vh;
+    grid-template-columns: 100%;
+    background-image: url("../assets/background.jpg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain; }
+    body .banner {
+      grid-row: 1/2;
+      grid-column: 1/2;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: center;
+      align-items: center; }
+    body nav {
+      display: grid;
+      grid-row: 2/3;
+      grid-column: 1/2;
+      flex-flow: column nowrap;
+      justify-content: space-around;
+      height: 100%; }
+      body nav .dropdown {
+        width: 100%; }
+        body nav .dropdown span {
+          font-size: 2rem; }
+        body nav .dropdown img {
+          width: 0.5rem; }
+      body nav .dropdown-content {
+        margin-left: 0; }
+        body nav .dropdown-content a {
+          font-size: 1.5rem; }
+
+  .parallax {
+    display: none; }
+
+  #logo {
+    position: relative;
+    width: 10rem;
+    z-index: -1;
+    margin-left: 1rem; }
+
+  #name {
+    position: relative;
+    font-size: 2.5rem;
+    margin-top: 0;
+    z-index: 1;
+    margin-right: 1rem;
+    text-align: right; }
+
+  #arrow {
+    display: none; }
+
+  .hidden {
+    display: grid; }
+
+  #footer {
+    grid-row: 3/4;
+    grid-column: 1/2;
+    height: 100%;
+    width: 100%;
+    background-color: teal;
+    grid-template-rows: 15% 15% 15% 15% 15% 15%;
+    grid-template-columns: 100%; }
+
+  .location {
+    margin-top: 2rem;
+    grid-row: 1/2;
+    grid-column: 1/2;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center; }
+    .location img {
+      margin-left: 0rem; }
+    .location p {
+      font-size: 1.3rem; }
+
+  .phone {
+    margin-top: 2rem;
+    grid-row: 2/3;
+    grid-column: 1/2;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center; }
+    .phone img {
+      margin-left: 0rem; }
+    .phone a {
+      font-size: 1.3rem; }
+
+  .email {
+    margin-top: 2rem;
+    grid-row: 3/4;
+    grid-column: 1/2;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center; }
+    .email img {
+      margin-left: 0rem; }
+    .email a {
+      font-size: 1.3rem; }
+
+  .linkin {
+    margin-top: 2rem;
+    grid-row: 4/5;
+    grid-column: 1/2;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center; }
+    .linkin img {
+      margin-left: 0rem; }
+    .linkin a {
+      font-size: 1.3rem; }
+
+  .github {
+    margin-top: 2rem;
+    grid-row: 5/6;
+    grid-column: 1/2;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center; }
+    .github img {
+      margin-left: 0rem; }
+    .github a {
+      font-size: 1.3rem; }
+
+  .resume {
+    margin-top: 2rem;
+    grid-row: 6/7;
+    grid-column: 1/2;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center; }
+    .resume img {
+      margin-left: 0rem; }
     .resume a {
       font-size: 1.3rem; } }
 

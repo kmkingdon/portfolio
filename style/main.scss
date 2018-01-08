@@ -340,8 +340,7 @@ body {
 .hidden {
   display: none;
 }
-@media only screen and (max-width: 780px);
- {
+@media only screen and (max-width: 767px){
   body {
     height: 150vh;
     grid-template-rows: 22vh 60vh 68vh;
@@ -431,6 +430,13 @@ body {
   .location {
     grid-row: 1/2;
     grid-column: 1/2;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    img {
+      margin-left: 0rem;
+    }
 
     p {
       font-size: 1.3rem;
@@ -440,7 +446,13 @@ body {
   .phone {
     grid-row: 2/3;
     grid-column: 1/2;
-
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    img {
+      margin-left: 0rem;
+    }
     a {
       font-size: 1.3rem;
     }
@@ -449,7 +461,13 @@ body {
   .email {
     grid-row: 3/4;
     grid-column: 1/2;
-
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    img {
+      margin-left: 0rem;
+    }
     a {
       font-size: 1.3rem;
     }
@@ -458,7 +476,13 @@ body {
   .linkin {
     grid-row: 4/5;
     grid-column: 1/2;
-
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    img {
+      margin-left: 0rem;
+    }
     a {
       font-size: 1.3rem;
     }
@@ -467,7 +491,13 @@ body {
   .github {
     grid-row: 5/6;
     grid-column: 1/2;
-
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    img {
+      margin-left: 0rem;
+    }
     a {
       font-size: 1.3rem;
     }
@@ -476,9 +506,200 @@ body {
   .resume {
     grid-row: 6/7;
     grid-column: 1/2;
-
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    img {
+      margin-left: 0rem;
+    }
     a {
       font-size: 1.3rem;
     }
   }
 }
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    body {
+      height: 100vh;
+      grid-template-rows: 30vh 35vh 35vh;
+      grid-template-columns: 100%;
+      background-image: url("../assets/background.jpg");
+      background-position: top;
+      background-repeat: no-repeat;
+      background-size: contain;
+
+      .banner {
+        grid-row: 1/2;
+        grid-column: 1/2;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+      }
+
+      nav {
+        display: grid;
+        grid-row: 2/3;
+        grid-column: 1/2;
+        flex-flow: column nowrap;
+        justify-content: space-around;
+        height: 100%;
+
+        .dropdown {
+          width: 100%;
+
+          span {
+            font-size: 2rem;
+          }
+
+          img {
+            width: 0.5rem;
+          }
+        }
+
+        .dropdown-content {
+          margin-left: 0;
+
+          a {
+            font-size: 1.5rem;
+          }
+        }
+      }
+    }
+
+    .parallax {
+      display: none;
+    }
+
+    #logo {
+      position: relative;
+      width: 10rem;
+      z-index: -1;
+      margin-left: 1rem;
+    }
+
+    #name {
+      position: relative;
+      font-size: 2.5rem;
+      margin-top: 0;
+      z-index: 1;
+      margin-right: 1rem;
+      text-align: right;
+    }
+
+    #arrow {
+      display: none;
+    }
+
+    .hidden {
+      display: grid;
+    }
+
+    #footer {
+      grid-row: 3/4;
+      grid-column: 1/2;
+      height: 100%;
+      width: 100%;
+      background-color: teal;
+      grid-template-rows: 15% 15% 15% 15% 15% 15%;
+      grid-template-columns: 100%;
+    }
+
+    .location {
+      margin-top: 2rem;
+      grid-row: 1/2;
+      grid-column: 1/2;
+      display: flex;
+      flex-flow: row;
+      justify-content: center;
+      align-items: center;
+      img {
+        margin-left: 0rem;
+      }
+
+      p {
+        font-size: 1.3rem;
+      }
+    }
+
+    .phone {
+      margin-top: 2rem;
+      grid-row: 2/3;
+      grid-column: 1/2;
+      display: flex;
+      flex-flow: row;
+      justify-content: center;
+      align-items: center;
+      img {
+        margin-left: 0rem;
+      }
+      a {
+        font-size: 1.3rem;
+      }
+    }
+
+    .email {
+      margin-top: 2rem;
+      grid-row: 3/4;
+      grid-column: 1/2;
+      display: flex;
+      flex-flow: row;
+      justify-content: center;
+      align-items: center;
+      img {
+        margin-left: 0rem;
+      }
+      a {
+        font-size: 1.3rem;
+      }
+    }
+
+    .linkin {
+      margin-top: 2rem;
+      grid-row: 4/5;
+      grid-column: 1/2;
+      display: flex;
+      flex-flow: row;
+      justify-content: center;
+      align-items: center;
+      img {
+        margin-left: 0rem;
+      }
+      a {
+        font-size: 1.3rem;
+      }
+    }
+
+    .github {
+      margin-top: 2rem;
+      grid-row: 5/6;
+      grid-column: 1/2;
+      display: flex;
+      flex-flow: row;
+      justify-content: center;
+      align-items: center;
+      img {
+        margin-left: 0rem;
+      }
+      a {
+        font-size: 1.3rem;
+      }
+    }
+
+    .resume {
+      margin-top: 2rem;
+      grid-row: 6/7;
+      grid-column: 1/2;
+      display: flex;
+      flex-flow: row;
+      justify-content: center;
+      align-items: center;
+      img {
+        margin-left: 0rem;
+      }
+      a {
+        font-size: 1.3rem;
+      }
+    }
+  }

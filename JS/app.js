@@ -21,7 +21,7 @@ window.requestAnimationFrame =
     setTimeout(f, 1000 / 60);
   };
 
-if (windowWidth > 780) {
+if (windowWidth > 1024) {
   window.addEventListener("scroll", moveFooter);
 }
 
@@ -56,7 +56,7 @@ function moveFooter() {
   }
 }
 
-if (windowWidth > 780) {
+if (windowWidth > 1024) {
   window.addEventListener(
     "scroll",
     function() {
@@ -70,7 +70,6 @@ function moveBanner() {
   let scrollTop = window.pageYOffset;
   let lwidth = logoPosition.width / 16;
   let nameBottom = name.getBoundingClientRect();
-
   if (scrollTop != 0) {
     let left = (logo.style.left = logoPosition.left - scrollTop * 0.24 + "px");
     logo.style.width = lwidth - scrollTop * 0.004 + "rem";
