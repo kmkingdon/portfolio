@@ -2,31 +2,22 @@ const projectContainer = document.getElementById("project-container");
 
 const projects = [
   {
-    name: "ConvoPro",
-    image: "assets/convopro-logo.png",
+    name: "Magical Network",
+    image: "assets/magical-network.png",
     description:
-      "Random question generator that enhances conversations with abilities to toggle question intimacy level and nsfw version.",
-    tech: "Express, Node.js, JavaScript, HTML, CSS",
-    website: "https://convo-pro.firebaseapp.com",
-    git: "https://github.com/kmkingdon/convo-pro-front"
+      "Fan based Harry Potter themed social network application that includes a comment wall, various search features, and profile creation.",
+    tech: "Knex.js, Postgres, Handlebars, HTML, JavaScript, SASS",
+    website: "https://hpsocialnetwork.herokuapp.com",
+    git: "https://github.com/kmkingdon/harrypottersocialnetwork"
   },
   {
-    name: "ConvoPro",
-    image: "assets/convopro-logo.png",
+    name: "Portfolio Website",
+    image: "assets/kingdonlogo.png",
     description:
-      "Random question generator that enhances conversations with abilities to toggle question intimacy level and nsfw version.",
-    tech: "Express, Node.js, JavaScript, HTML, CSS",
-    website: "https://convo-pro.firebaseapp.com",
-    git: "https://github.com/kmkingdon/convo-pro-front"
-  },
-  {
-    name: "ConvoPro",
-    image: "assets/convopro-logo.png",
-    description:
-      "Random question generator that enhances conversations with abilities to toggle question intimacy level and nsfw version.",
-    tech: "Express, Node.js, JavaScript, HTML, CSS",
-    website: "https://convo-pro.firebaseapp.com",
-    git: "https://github.com/kmkingdon/convo-pro-front"
+      "JavaScript powered website featuring my work as a developer, artist, and educator.",
+    tech: "SASS, Leaflet.js, JavaScript, HTML",
+    website: "https://kmkingdon.info",
+    git: "https://github.com/kmkingdon/portfolio"
   },
   {
     name: "ConvoPro",
