@@ -2,15 +2,6 @@ const projectContainer = document.getElementById("project-container");
 
 const projects = [
   {
-    name: "Magical Network",
-    image: "assets/magical-network.png",
-    description:
-      "Fan based Harry Potter themed social network application that includes a comment wall, various search features, and profile creation.",
-    tech: "Knex.js, Postgres, Handlebars, HTML, JavaScript, SASS",
-    website: "https://hpsocialnetwork.herokuapp.com",
-    git: "https://github.com/kmkingdon/harrypottersocialnetwork"
-  },
-  {
     name: "Portfolio Website",
     image: "assets/kingdonlogo.png",
     description:
@@ -27,6 +18,24 @@ const projects = [
     tech: "Express, Node.js, JavaScript, HTML, CSS",
     website: "https://convo-pro.firebaseapp.com",
     git: "https://github.com/kmkingdon/convo-pro-front"
+  },
+  {
+    name: "Magical Network",
+    image: "assets/magical-network.png",
+    description:
+      "Fan based Harry Potter themed social network application that includes a comment wall, various search features, and profile creation.",
+    tech: "Knex.js, Postgres, Handlebars, HTML, JavaScript, SASS",
+    website: "https://hpsocialnetwork.herokuapp.com",
+    git: "https://github.com/kmkingdon/harrypottersocialnetwork"
+  },
+  {
+    name: "Goal Tracker",
+    image: "assets/goaltrackerlogo.png",
+    description:
+      "Student/teacher platform for data tracking, data visualization, smart goal creation based on data, and teacher review.",
+    tech: "React.js, Chart.js, Knex.js, Postgres, SASS",
+    website: "https://goaltrackerstudentprogress.herokuapp.com",
+    git: "https://github.com/kmkingdon/goal-tracker-react"
   }
 ];
 
