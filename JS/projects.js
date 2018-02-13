@@ -34,8 +34,17 @@ const projects = [
     description:
       "Student/teacher platform for data tracking, data visualization, smart goal creation based on data, and teacher review.",
     tech: "React.js, Chart.js, Knex.js, Postgres, SASS",
-    website: "https://goaltrackerstudentprogress.herokuapp.com",
+    website: "https://goaltrackerstudentprogress.herokuapp.com ",
     git: "https://github.com/kmkingdon/goal-tracker-react"
+  },
+  {
+    name: "Readativity",
+    image:"assets/readativity.png" ,
+    description:
+    "A reading application combining currated content based on interest and statistic tracking to improve reading performance.",
+    tech: "React.js, Chart.js, Knex.js, Postgres, Styled Components",
+    website: "https://readativity-app.herokuapp.com",
+    git: "https://github.com/Readativity/Frontend"
   }
 ];
 
