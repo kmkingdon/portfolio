@@ -347,7 +347,7 @@ body {
 @media only screen and (max-width: 767px){
   body {
     height: 150vh;
-    grid-template-rows: 22vh 60vh 68vh;
+    grid-template-rows: 40vh 60vh 68vh;
     grid-template-columns: 100%;
     background-image: url("../assets/background.jpg");
     background-position: top;
@@ -370,6 +370,7 @@ body {
       flex-flow: column nowrap;
       justify-content: space-around;
       height: 100%;
+      margin-top: 0rem;
 
       .dropdown {
         width: 100%;

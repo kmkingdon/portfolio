@@ -266,7 +266,7 @@ body {
 @media only screen and (max-width: 767px) {
   body {
     height: 150vh;
-    grid-template-rows: 22vh 60vh 68vh;
+    grid-template-rows: 40vh 60vh 68vh;
     grid-template-columns: 100%;
     background-image: url("../assets/background.jpg");
     background-position: top;
@@ -285,7 +285,8 @@ body {
       grid-column: 1/2;
       flex-flow: column nowrap;
       justify-content: space-around;
-      height: 100%; }
+      height: 100%;
+      margin-top: 0rem; }
       body nav .dropdown {
         width: 100%; }
         body nav .dropdown span {
