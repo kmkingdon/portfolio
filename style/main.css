@@ -47,6 +47,8 @@ body {
         text-decoration: none;
         font-family: "PT Serif", serif;
         padding: 20px 0; }
+      body nav .dropdown-content li {
+        margin: .5rem 0rem 1rem 0rem; }
     body nav .dropdown:hover .dropdown-content {
       display: block; }
 
@@ -300,7 +302,7 @@ body {
 
   #logo {
     position: relative;
-    width: 10rem;
+    width: 8rem;
     z-index: -1;
     margin-left: 1rem; }
 
@@ -332,72 +334,78 @@ body {
     grid-column: 1/2;
     display: flex;
     flex-flow: row;
-    justify-content: center;
-    align-items: center; }
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 3rem; }
     .location img {
       margin-left: 0rem; }
     .location p {
-      font-size: 1.3rem; }
+      font-size: 1rem; }
 
   .phone {
     grid-row: 2/3;
     grid-column: 1/2;
     display: flex;
     flex-flow: row;
-    justify-content: center;
-    align-items: center; }
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 3rem; }
     .phone img {
       margin-left: 0rem; }
     .phone a {
-      font-size: 1.3rem; }
+      font-size: 1rem; }
 
   .email {
     grid-row: 3/4;
     grid-column: 1/2;
     display: flex;
     flex-flow: row;
-    justify-content: center;
-    align-items: center; }
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 3rem; }
     .email img {
       margin-left: 0rem; }
     .email a {
-      font-size: 1.3rem; }
+      font-size: 1rem; }
 
   .linkin {
     grid-row: 4/5;
     grid-column: 1/2;
     display: flex;
     flex-flow: row;
-    justify-content: center;
-    align-items: center; }
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 3rem; }
     .linkin img {
       margin-left: 0rem; }
     .linkin a {
-      font-size: 1.3rem; }
+      font-size: 1rem; }
 
   .github {
     grid-row: 5/6;
     grid-column: 1/2;
     display: flex;
     flex-flow: row;
-    justify-content: center;
-    align-items: center; }
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 3rem; }
     .github img {
       margin-left: 0rem; }
     .github a {
-      font-size: 1.3rem; }
+      font-size: 1rem; }
 
   .resume {
     grid-row: 6/7;
     grid-column: 1/2;
     display: flex;
     flex-flow: row;
-    justify-content: center;
-    align-items: center; }
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 3rem; }
     .resume img {
       margin-left: 0rem; }
     .resume a {
-      font-size: 1.3rem; } }
+      font-size: 1rem; } }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   body {
     overflow: hidden;

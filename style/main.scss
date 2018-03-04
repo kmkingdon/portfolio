@@ -60,6 +60,10 @@ body {
         font-family: $main-font;
         padding: 20px 0;
       }
+
+      li {
+        margin: .5rem 0rem 1rem 0rem;
+      }
     }
 
     .dropdown:hover .dropdown-content {
@@ -395,7 +399,7 @@ body {
 
   #logo {
     position: relative;
-    width: 10rem;
+    width: 8rem;
     z-index: -1;
     margin-left: 1rem;
   }
@@ -432,14 +436,15 @@ body {
     grid-column: 1/2;
     display: flex;
     flex-flow: row;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+    margin-left: 3rem;
     img {
       margin-left: 0rem;
     }
 
     p {
-      font-size: 1.3rem;
+      font-size: 1rem;
     }
   }
 
@@ -448,13 +453,14 @@ body {
     grid-column: 1/2;
     display: flex;
     flex-flow: row;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+    margin-left: 3rem;
     img {
       margin-left: 0rem;
     }
     a {
-      font-size: 1.3rem;
+      font-size: 1rem;
     }
   }
 
@@ -463,13 +469,14 @@ body {
     grid-column: 1/2;
     display: flex;
     flex-flow: row;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+    margin-left: 3rem;
     img {
       margin-left: 0rem;
     }
     a {
-      font-size: 1.3rem;
+      font-size: 1rem;
     }
   }
 
@@ -478,13 +485,14 @@ body {
     grid-column: 1/2;
     display: flex;
     flex-flow: row;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+    margin-left: 3rem;
     img {
       margin-left: 0rem;
     }
     a {
-      font-size: 1.3rem;
+      font-size: 1rem;
     }
   }
 
@@ -493,13 +501,14 @@ body {
     grid-column: 1/2;
     display: flex;
     flex-flow: row;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+    margin-left: 3rem;
     img {
       margin-left: 0rem;
     }
     a {
-      font-size: 1.3rem;
+      font-size: 1rem;
     }
   }
 
@@ -508,13 +517,14 @@ body {
     grid-column: 1/2;
     display: flex;
     flex-flow: row;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+    margin-left: 3rem;
     img {
       margin-left: 0rem;
     }
     a {
-      font-size: 1.3rem;
+      font-size: 1rem;
     }
   }
 }
