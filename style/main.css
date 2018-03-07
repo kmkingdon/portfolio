@@ -281,20 +281,21 @@ body {
       align-items: center; }
     body nav {
       display: grid;
-      grid-row: 2/3;
+      grid-row: 1/3;
       grid-column: 1/2;
       flex-flow: column nowrap;
+      align-items: end;
       justify-content: space-around;
-      height: 100%;
-      margin-top: 0rem; }
+      height: 60%;
+      margin-top: 8rem; }
       body nav .dropdown {
         width: 100%; }
         body nav .dropdown span {
           font-size: 2rem; }
         body nav .dropdown img {
-          width: 0.5rem; }
+          width: 0.8rem; }
       body nav .dropdown-content {
-        margin-left: 0; }
+        margin-left: -1rem; }
         body nav .dropdown-content a {
           font-size: 1rem; }
 

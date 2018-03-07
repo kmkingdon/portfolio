@@ -21,7 +21,43 @@ window.requestAnimationFrame =
     setTimeout(f, 1000 / 60);
   };
 
-if (windowWidth > 1024) {
+
+let is_safari= false;
+
+function isSafari() {
+  is_safari = navigator.userAgent.toLowerCase().indexOf('safari/') > -1;
+  return is_safari = true;
+}
+
+isSafari();
+console.log(is_safari);
+
+if(is_safari === true) {
+  footer.classList.remove("hidden");
+  footer.classList.remove("footer");
+  footer.classList.add("footer-absolute");
+  footer.style.bottom = "0px";
+  body.style.height = "100vh";
+  body.style.overflow = "hidden";
+  arrow.classList.add("hidden");
+
+  let contacts = footer.childNodes;
+  for (var i = 1; i < contacts.length; i += 2) {
+    contacts[i].classList.remove("hidden");
+    contacts[i].classList.add("fadeIn");
+  }
+
+  nav.style.display = "flex";
+
+  banner.classList.remove("banner");
+  banner.classList.add("banner-final");
+  banner.classList.add("flipInX");
+  logo.style.left = "110px";
+  name.style.top = "-260px";
+  name.style.right = "80px";
+}
+
+if (windowWidth > 1024 && is_safari === false) {
   window.addEventListener("scroll", moveFooter);
 }
 
@@ -56,7 +92,7 @@ function moveFooter() {
   }
 }
 
-if (windowWidth > 1024) {
+if (windowWidth > 1024 && is_safari === false) {
   window.addEventListener(
     "scroll",
     function() {
