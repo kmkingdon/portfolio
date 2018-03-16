@@ -23,16 +23,25 @@ window.requestAnimationFrame =
 
 
 let is_safari= false;
+let is_mozilla = false;
+let is_edge = false;
 
-function isSafari() {
-  is_safari = navigator.userAgent.toLowerCase().indexOf('safari/') > -1;
-  return is_safari = true;
+function checkSafari() {
+  is_safari = (navigator.vendor && navigator.vendor.indexOf('Apple') > -1 &&
+               navigator.userAgent && !navigator.userAgent.match('CriOS'));
+  return is_safari
 }
 
-isSafari();
-console.log(is_safari);
+function checkMozilla() {
+  is_mozilla= (navigator.userAgent.indexOf('Firefox') !== -1);
+  return  is_mozilla
+}
 
-if(is_safari === true) {
+checkSafari();
+checkMozilla()
+
+
+if(is_safari === true || is_mozilla === true) {
   footer.classList.remove("hidden");
   footer.classList.remove("footer");
   footer.classList.add("footer-absolute");
@@ -51,7 +60,6 @@ if(is_safari === true) {
 
   banner.classList.remove("banner");
   banner.classList.add("banner-final");
-  banner.classList.add("flipInX");
   logo.style.left = "110px";
   name.style.top = "-260px";
   name.style.right = "80px";

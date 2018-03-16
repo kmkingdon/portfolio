@@ -41,10 +41,28 @@ const projects = [
     name: "Readativity",
     image:"assets/readativity.png" ,
     description:
-    "A reading application combining currated content based on interest and statistic tracking to improve reading performance.",
+    "A reading application combining curated content based on interest and statistic tracking to improve reading performance.",
     tech: "React.js, Chart.js, Knex.js, Postgres, Styled Components",
     website: "https://readativity-app.herokuapp.com",
     git: "https://github.com/Readativity/Frontend"
+  },
+  {
+    name: "Denver Walking Tours",
+    image:"assets/walking.jpg" ,
+    description:
+    "Mobile React Redux demo app showing four walking tours around Denver.",
+    tech: "React.js, Redux.js, Google Maps API, Knex.js, Postgres, Styled Components",
+    website: "https://walkingtoursdenver.herokuapp.com/",
+    git: "https://github.com/kmkingdon/denver-walking-tours"
+  },
+  {
+    name: "The Tipping Point",
+    image:"assets/tippingpoint.png" ,
+    description:
+    "D3 visualization centering on the story of the Port Arthur massacre in Australia and how it relates to the contemporary gun control debate.",
+    tech: "D3, TopoJSON, C3, Leaflet.js, Snap.svg",
+    website: "https://the-tipping-point-d3.firebaseapp.com/",
+    git: "https://github.com/collinsbj/D3-Gun-Data"
   }
 ];
 
